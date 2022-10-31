@@ -1,0 +1,892 @@
+@charset "UTF-8";
+@font-face {
+font-family: "Fira Sans";
+font-weight: 400;
+font-style: normal;
+src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(media/FiraSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-style: italic;
+    src: local('Fira Sans Italic'), local('FiraSans-Italic'), url(media/FiraSans-Italic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-style: normal;
+    src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(FiraSans-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-style: italic;
+    src: local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'), url(FiraSans-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-style: normal;
+    src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(media/FiraSans-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 500;
+    font-style: italic;
+    src: local('Fira Sans Medium Italic'), local('FiraSans-MediumItalic'), url(media/FiraSans-MediumItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(media/FiraSans-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 600;
+    font-style: italic;
+    src: local('Fira Sans SemiBold Italic'), local('FiraSans-SemiBoldItalic'), url(media/FiraSans-SemiBoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-style: normal;
+    src: local('Fira Sans Light'), local('FiraSans-Light'), url(media/FiraSans-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-style: italic;
+    src: local('Fira Sans Light Italic'), local('FiraSans-LightItalic'), url(media/FiraSans-LightItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 200;
+    font-style: normal;
+    src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(FiraSans-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    font-weight: 200;
+    font-style: italic;
+    src: local('Fira Sans ExtraLight Italic'), local('FiraSans-ExtraLightItalic'), url(FiraSans-ExtraLightItalic.ttf) format('truetype');
+}
+/*Condesed*/
+@font-face {
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    font-style: normal;
+    src: local('Fira Sans Condensed SemiBold'), local('FiraSansCondensed-SemiBold'), url(FiraSansCondensed-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans Condensed";
+    font-weight: 500;
+    font-style: normal;
+    src: local('Fira Sans Condensed Medium'), local('FiraSansCondensed-Medium'), url(FiraSansCondensed-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-style: normal;
+    src: local('Fira Sans Condensed Regular'), local('FiraSansCondensed-Regular'), url(FiraSansCondensed-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans Condensed";
+    font-weight: 300;
+    font-style: normal;
+    src: local('Fira Sans Condensed Light'), local('FiraSansCondensed-Light'), url(FiraSansCondensed-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans Condensed";
+    font-weight: 200;
+    font-style: normal;
+    src: local('Fira Sans Condensed ExtraLight'), local('FiraSansCondensed-ExtraLight'), url(FiraSansCondensed-ExtraLight.ttf) format('truetype');
+}
+@page {
+  size: 210mm 297mm;
+  margin-top: 10mm;
+  margin-bottom: 30mm;
+  margin-left: 12.7mm;
+  margin-right: 12.7mm;
+    @top-center {
+      content: normal;
+    }
+    @bottom-right {
+      content: "Seite  " counter(page) ;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: normal;
+      font-size: 9.8pt;
+      font-weight: 400;
+      color: #000;
+      vertical-align: middle;
+      }
+    }
+
+@page :first{
+      margin-top: 6mm;
+      margin-bottom: 30mm;
+      margin-left: 12.7mm;
+      margin-right: 12.7mm;
+      background-image: url(media/logo-gesundheitsamt.png);
+      background-repeat: no-repeat;
+      background-position: 95% 45px;
+      background-size: 65.8mm;    
+}
+
+
+
+@page :blank {
+	@bottom-left { content: normal; }
+	@bottom-right { content: normal; }
+	@top-center { content: normal; }
+    @top-left { content: normal; }
+    @top-right { content: normal; }
+}
+
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html body { background-color: transparent!important;}
+body {
+  counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
+  overflow-wrap: break-word;
+}
+html {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+h1.part { display: none; }
+
+.article-title {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  string-set: chapter-title content(text);
+  font-size: 32pt;
+  color: #000;
+  margin: 0 0 10px 0;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  text-transform: none;
+  hyphens: manual;
+  white-space: pre-line;
+  letter-spacing: 0pt;
+  word-spacing: 1px;
+  font-weight: 600;
+}
+
+.article-title strong { font-weight: 600;}
+
+/*Literaturverzeichnis*/
+h1.article-bibliography-header {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-size: 9.8pt;
+  text-align: left;
+  margin-bottom: 0;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  text-transform: none;
+  hyphens: manual;
+  white-space: pre-line;
+  font-weight: 600;
+}
+
+.csl-entry {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-weight: 400;
+  font-size:  0.8837rem;
+  line-height: 1.3rem;
+  margin-bottom: 9pt;
+}
+.article-body > figure.image-width-100 {
+  width: auto !important;
+}
+
+.image-width-100 {
+    width: 99%;
+    box-sizing:border-box;
+}
+
+.image-width-90 {
+    width: 89%;
+    box-sizing:border-box;
+}
+
+.image-width-75 {
+    width: 74%;
+    box-sizing:border-box;
+}
+
+.image-width-50 {
+    width: 49%;
+    margin-left:5%;
+    margin-right:5%;
+    box-sizing:border-box;
+}
+
+.image-width-25 {
+    width: 24%;
+    margin-left:2%;
+    margin-right:2%;
+    box-sizing:border-box;
+}
+
+p {
+  font-size: 0.8837;
+  line-height: 1.35;
+  margin-bottom: 0pt;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  text-align: justify;
+  orphans: 2;
+  widows: 2;
+}
+
+p + p {
+  text-indent: 0;
+  margin-top: 9pt; }
+
+div.table-cell-container p + p {
+  margin-top: 0pt;}
+
+li p {
+   display: inline;
+}
+
+p strong,
+p .bold,
+p .Bold,
+p b,
+li strong,
+li .bold,
+li .Bold,
+li b {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-weight: 700;
+}
+
+table li strong,
+table li .bold,
+table li .Bold,
+table li b {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-weight: 700;
+}
+
+em,
+.italic {
+  font-family: inherit;
+  font-style: italic;
+}
+
+pre {
+  max-width: 80.1266666667mm;
+}
+
+a, .csl-bib-body a {
+  color: #2062af;
+  text-decoration: none !important;
+  border-bottom: 1px solid #2062af;
+}
+
+strong em {
+  font-weight: 700;
+  font-style: italic;
+}
+
+var {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-weight: normal;
+}
+
+var em,
+var .Italic {
+  font-weight: normal;
+  font-style: normal;
+}
+
+sup {
+  font-size: 9.75pt;
+  font-weight: inherit;
+  position: relative;
+  top: -3px;
+  vertical-align: baseline;
+}
+
+.references p {
+  line-height: 10.8pt;
+  font-size: 9pt;
+}
+
+blockquote {
+  display: block;
+  width: 95%;
+  position: relative;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-size:  11pt;
+  margin-top: 12pt;
+  margin-bottom: 12pt;
+  margin-left: -100px;
+  padding-left: 5px;
+  margin-right: 10px;
+
+}
+
+blockquote p {
+  font-family: inherit;
+  text-align: left;
+  font-weight: 200;
+  font-size: 140%;
+  line-height: 1.5;
+}
+
+blockquote strong {
+  font-weight: 700;
+}
+
+blockquote  p.att { text-align: right; }
+
+h2, h2 strong {
+font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+margin-top: 1em;
+color:#f68b1e;
+}
+h3, h3 strong,
+h4, h4 strong,
+h5,
+h6 {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  margin-top: 1em;
+  color: black;
+}
+
+h1 {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-size: 35px;
+  color:#f68b1e;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  text-transform: none;
+  hyphens: manual;
+  white-space: pre-line;
+  letter-spacing: 0pt;
+  word-spacing: 1px;
+  font-weight: 600
+}
+
+h1 strong { font-weight: 400;}
+
+h2 {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  text-transform: none;
+  font-weight: 600;
+  margin-bottom: 9pt;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size:  0.8837;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  font-weight: 600;
+  margin-bottom: 9pt;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  margin-bottom: 9pt;
+  font-weight: 700;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+h5 {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 5pt;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+h6 {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem; 
+  margin-bottom: 5pt;
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+hr.br { border:0; height: 0px; }
+
+.one ol li {
+  list-style-type: decimal;
+}
+
+.article-body a.fn {
+  left: 0.2em;
+  border-bottom: none;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+}
+.footnotes ol li p a {
+  text-wrap: word-break;
+}
+.footnote-counter { font-weight: 700;}
+
+.fnlist p {
+  text-indent: 0;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0.2em 0 0.5em 0;
+  font-size: 13px;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  text-align: left;
+}
+
+/*epub*/
+.footnote-content {
+  color: black;
+  text-indent: 0;
+  font-size: 0.7rem;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+}
+
+.footnote-content span {
+  margin-left: 1.3pc;
+}
+
+a.footnoteRef {
+  border-bottom: 0;
+  line-height: 0;
+  background: none;
+  display: inline;
+}
+
+figure {
+  text-indent: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 27pt;
+  margin-bottom: 27pt;
+}
+
+figure img {
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+figure figcaption {
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  margin: 8px 0;
+  font-weight: 300;
+  font-size:  0.82rem;
+  line-height: 1.3rem;
+  text-indent: 0;
+  text-align: left;
+}
+
+.label-counter {
+  font-weight: 700;
+}
+/*From Fidus writer*/
+.figure-cat-figure::after {
+    counter-increment: figure-cat-figure;
+    content: ' ' counter(figure-cat-figure);
+}
+.figure-cat-photo::after {
+    counter-increment: figure-cat-photo;
+    content: ' ' counter(figure-cat-photo);
+}
+.figure-cat-table::after {
+    counter-increment: figure-cat-table;
+    content: ' ' counter(figure-cat-table);
+}
+.figure-cat-figure + span::before, .figure-cat-photo + span::before, .figure-cat-table + span::before {
+    content: ': ';
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 9pt;
+  margin-bottom: 9pt;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  line-height: 1.3;
+  hyphens: none;
+}
+ul li {
+  padding-bottom: 6px;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -15px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -20px;
+  color:#f68b1e;
+  font-size: 120%;
+  font-weight: 700;
+}
+#page-navigation ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: decimal;
+    float: left;
+}
+ .article-body ol {
+  display: block;
+  list-style: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 20px;
+  margin-right: 0;
+  line-height: 13pt;
+  hyphens: none;
+}
+ol li {
+  margin-bottom: 0.5em;
+}
+ol li p {
+  line-height: 1.3pt;
+}
+
+.article table {
+  margin: 0 auto;
+  width: 99% !important;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  background-size: 8pt;
+  page-break-inside: avoid;
+  margin-top: 9pt;
+  margin-bottom: 18pt;
+  border-collapse: collapse;
+  border-left: 0;
+  border-right: 0;
+  text-align: left;
+  font-size: 9pt;
+}
+
+.article-body > table.table-100.table-fixed {
+  width: auto !important;
+}
+.article-body + table caption {
+  padding-top: 80px!important;
+}
+
+.article table.tbnostyle tr:first-of-type td {
+  font-style: normal!important;
+  background-color: transparent !important;
+  border-bottom: 1px solid rgb(231,231,231)!important;
+}
+
+.article table caption {
+  padding: 1em 0;
+  font-size:  0.82rem;
+  text-align: left;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.article table td {
+  width: auto;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #f68b1e;
+  padding: 1.1em 0.5em;
+}
+
+.article table td a {
+ word-wrap: break-word;
+ overflow-wrap: break-word;
+}
+
+.article table td:last-of-type {
+  padding-right: 1em;
+}
+
+table p,
+table ul,
+table li,
+table ol {
+  font-size: 9pt;
+  line-height: 1.3;
+  margin: 0;
+  font-family: "Fira Sans", helvetica neue, arial, sans-serif;
+  text-align: left;
+  text-indent: 0;
+}
+
+table li {
+  vertical-align:top;
+}
+
+tr:first-of-type th {
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
+}
+
+tr:first-of-type td {
+  font-style: italic;
+}
+.article tr:nth-child(odd) {
+  background-color: #FDD5A5;
+}
+.article tr:nth-child(even) {
+  background-color: #fde5cd;
+}
+
+
+tr:last-of-type td {
+  padding-bottom: 0.6em;
+}
+
+table + p {
+  text-indent: 0;
+}
+
+.article th {
+  border-left: 0;
+  border-right: 0;
+  padding: 1em;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #2062af;/*#F68B1E*/
+  border-bottom: 2px solid #20215E;
+}
+
+th p { color: #fff; }
+
+tr:first-of-type {
+    font-weight: normal;
+}
+
+tr.head + tr td {
+  padding-top: 0.8em;
+}
+
+table + p {
+  margin: 0 auto;
+  width: 95% !important;
+  margin-top: 0;
+}
+
+table + p + p {
+  margin-top: 18pt;
+}
+
+div.article-body > h2:first-child, div.Kolophon > h2:first-child {
+  margin-top: 0pt;
+}
+
+h2 + h2, h2 + h3, h3 + h4, h4 + h5 {
+  margin-top: -5pt;
+}
+
+h2 + p {
+  margin-top: -5pt;
+}
+
+h3 + p, h4 + p, h5 + p {
+ margin-top: -3pt;
+}
+
+h2 + p {
+    page-break-after: avoid;
+}
+
+@media print {
+  a {
+    color: #2062af;
+    text-decoration: none !important;
+    border-bottom: 1px solid #2062af;
+  }
+  @page {
+    size: 210mm 297mm;
+    margin-top: 12.7mm;
+    margin-bottom: 30mm;
+    margin-left: 12.7mm;
+    margin-right: 12.7mm;
+
+    @top-center {
+        content: normal;
+      }
+      @bottom-left {
+        width: 160mm;
+        height: 30mm;
+      }
+      @bottom-center {
+        width:2mm;
+        content: normal;
+        height: 30mm;
+      }
+      @bottom-right {
+        content: "Seite  " counter(page) ;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: normal;
+        font-size: 9.8pt;
+        font-weight: 400;
+        color: #000;
+        vertical-align: middle;
+        width: 48mm;
+        height: 30mm;
+        }
+      }
+  @page :first{
+    margin-top: 6mm;
+    background-image: url(media/logo-gesundheitsamt.png);
+    background-repeat: no-repeat;
+    background-position: 95% 45px;
+    background-size: 65.8mm; 
+    }
+  html {
+    font-size: 13px;
+  }
+  .article-body {
+              column-count: 2;
+              -webkit-column-count: 2;
+              column-gap: 12.7mm;
+          }
+  div.article-subtitle{
+    margin-left: -12.7mm;
+    margin-right: 12.7mm;
+    width: calc(100% + 26mm);
+      height: 35px;
+      border-bottom: 1px solid #f68b1e;
+      margin-bottom: 2em;
+  }
+  .article-heading.article-subtitle h1 {
+    font-size: 22pt;
+    color:#f68b1e;
+    margin:0 0 0 12.7mm;
+  }
+  .article-heading.article-subtitle h1::after {
+      width: 226px;
+      height: 1px;
+      border-bottom: 5px solid #f68b1e;
+      content: " ";
+      display: block;
+  }
+  h2, h3 { font-size: 9.8pt;}
+
+p {
+  font-size: 9.8pt; /* 0.8837rem */
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3rem; /* 1.3954rem */
+  margin-bottom: 0pt;
+  text-align: justify;
+  /* letter-spacing: 0.2pt; */
+  /* word-spacing: 0.2pt; */
+  orphans: 2;
+  widows: 2;
+}
+ol li {
+    page-break-after: avoid;
+}
+ol li:first-child {
+    page-break-after: auto;
+}
+.article-footer {
+    border-top: 1px solid #f68b1e;
+    padding: 8px 0px 0px 0px;
+    margin-top: 20px;
+}
+.article-footer p + p {
+    margin-top: 4px;
+} 
+}
