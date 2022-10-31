@@ -6,6 +6,8 @@ See online rendering as Paged Web. URL
 
 ## Contents
 
+This repository contains the sample output, source content, and style.
+
   - Sample outputs: PDF, Web, Ebook and the HTML is readable in Page Web using Vivliostyle - URL
   - Fidus source file for example newsletter content.
   - Style assets to be uploaded a Document Style.
