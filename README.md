@@ -2,7 +2,7 @@
 
 Style intended for Fidus Writer documents and not books. Although the style could be applied to a Fidus Book.
 
-See online rendering as Paged Web. URL
+See online rendering as [Paged Web](https://vivliostyle.org/viewer/#src=https://raw.githubusercontent.com/mrchristian/newsletter-document-style/main/sample-outputs/frankfurter-infektinfo.html/document.html)
 
 ## Contents
 
@@ -16,6 +16,8 @@ This repository contains the sample output, source content, and style.
 ## Preview
 
 ![Newsletter](/sample-outputs/newsletter.jpg "Newsletter")  
+
+[Paged Web](https://vivliostyle.org/viewer/#src=https://raw.githubusercontent.com/mrchristian/newsletter-document-style/main/sample-outputs/frankfurter-infektinfo.html/document.html)
 
 ## About the style
 
