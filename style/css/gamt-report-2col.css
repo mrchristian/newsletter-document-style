@@ -3,14 +3,14 @@
 font-family: "Fira Sans";
 font-weight: 400;
 font-style: normal;
-src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(media/FiraSans-Regular.ttf) format('truetype');
+src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(FiraSans-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: "Fira Sans";
     font-weight: 400;
     font-style: italic;
-    src: local('Fira Sans Italic'), local('FiraSans-Italic'), url(media/FiraSans-Italic.ttf) format('truetype');
+    src: local('Fira Sans Italic'), local('FiraSans-Italic'), url(FiraSans-Italic.ttf) format('truetype');
 }
 @font-face {
     font-family: "Fira Sans";
@@ -28,38 +28,38 @@ src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(media/FiraSans-R
     font-family: "Fira Sans";
     font-weight: 500;
     font-style: normal;
-    src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(media/FiraSans-Medium.ttf) format('truetype');
+    src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(FiraSans-Medium.ttf) format('truetype');
 }
 @font-face {
     font-family: "Fira Sans";
     font-weight: 500;
     font-style: italic;
-    src: local('Fira Sans Medium Italic'), local('FiraSans-MediumItalic'), url(media/FiraSans-MediumItalic.ttf) format('truetype');
+    src: local('Fira Sans Medium Italic'), local('FiraSans-MediumItalic'), url(FiraSans-MediumItalic.ttf) format('truetype');
 }
 @font-face {
     font-family: "Fira Sans";
     font-weight: 600;
     font-style: normal;
-    src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(media/FiraSans-SemiBold.ttf) format('truetype');
+    src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(FiraSans-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: "Fira Sans";
     font-weight: 600;
     font-style: italic;
-    src: local('Fira Sans SemiBold Italic'), local('FiraSans-SemiBoldItalic'), url(media/FiraSans-SemiBoldItalic.ttf) format('truetype');
+    src: local('Fira Sans SemiBold Italic'), local('FiraSans-SemiBoldItalic'), url(FiraSans-SemiBoldItalic.ttf) format('truetype');
 }
 @font-face {
     font-family: "Fira Sans";
     font-weight: 300;
     font-style: normal;
-    src: local('Fira Sans Light'), local('FiraSans-Light'), url(media/FiraSans-Light.ttf) format('truetype');
+    src: local('Fira Sans Light'), local('FiraSans-Light'), url(FiraSans-Light.ttf) format('truetype');
 }
 @font-face {
     font-family: "Fira Sans";
     font-weight: 300;
     font-style: italic;
-    src: local('Fira Sans Light Italic'), local('FiraSans-LightItalic'), url(media/FiraSans-LightItalic.ttf) format('truetype');
+    src: local('Fira Sans Light Italic'), local('FiraSans-LightItalic'), url(FiraSans-LightItalic.ttf) format('truetype');
 }
 @font-face {
     font-family: "Fira Sans";
@@ -129,7 +129,7 @@ src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(media/FiraSans-R
       margin-bottom: 30mm;
       margin-left: 12.7mm;
       margin-right: 12.7mm;
-      background-image: url(media/logo-gesundheitsamt.png);
+      background-image: url(logo-gesundheitsamt.png);
       background-repeat: no-repeat;
       background-position: 95% 45px;
       background-size: 65.8mm;    
@@ -828,7 +828,7 @@ h2 + p {
       }
   @page :first{
     margin-top: 6mm;
-    background-image: url(media/logo-gesundheitsamt.png);
+    background-image: url(logo-gesundheitsamt.png);
     background-repeat: no-repeat;
     background-position: 95% 45px;
     background-size: 65.8mm; 
